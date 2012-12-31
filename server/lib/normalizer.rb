@@ -17,11 +17,11 @@ module MakeMe
     end
 
     def count
-      @args[:count]
+      @args[:count] || 1
     end
 
     def scale
-      @args[:scale]
+      @args[:scale] || 1.0
     end
 
     def bounds
