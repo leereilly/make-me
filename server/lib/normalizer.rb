@@ -13,7 +13,8 @@ module MakeMe
                       }
 
       @args = default_args.merge(args)
-      @inputs, @output = inputs, output
+      @inputs = inputs || []
+      @output = output
     end
 
     def count
